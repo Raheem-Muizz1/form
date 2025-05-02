@@ -17,8 +17,8 @@
     <form id="userForm" action="https://formspree.io/f/xeogaaqo" method="post">
       <label>
        Applicant full name: <br>
-        <input type="text" id="name" required  placeholder="First name" name="name"/> 
-      <input type="text" id="name" class="last" required placeholder="Last name" name="name"/> 
+        <input type="text" id="name" required  placeholder="First name" name="name" onkeyup="lettersOnly(this)"/> 
+      <input type="text" id="name" class="last" required placeholder="Last name" name="name" onkeyup ="lettersOnly(this)"/> 
       </label><br></br>
       <label>
         Date Of Birth: <br>
