@@ -1,0 +1,61 @@
+body {
+  background-color: #837e7e;
+  padding: 4%;
+}
+
+img {
+  float: left;
+  border-radius: 40%;
+}
+
+form {
+  text-align: left;
+  padding: 5%;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+input {
+  border: none;
+  border-radius: 30px;
+  padding: 6px;
+}
+input:hover {
+  border: 2px solid;
+}
+h1 {
+  text-align: center;
+}
+
+#name {
+  width: 44%;
+}
+#Email {
+  width: 100%;
+}
+
+#date {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: #837e7e;
+  color: whitesmoke;
+  font-size: large;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+#message {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+}

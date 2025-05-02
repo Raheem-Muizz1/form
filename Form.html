@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="Form.css" />
+    <script src="Form.js"></script>
+  </head>
+  <body>
+    <div class="image">
+      <h1>
+         Calculus Pathfinder Consult <br />
+         Application Form
+      </h1>
+    </div>
+    <form id="userForm" action="https://formspree.io/f/xeogaaqo" method="post">
+      <label>
+       Applicant full name: <br>
+        <input type="text" id="name" required  placeholder="First name" name="name"/> 
+      <input type="text" id="name" class="last" required placeholder="Last name" name="name"/> 
+      </label><br></br>
+      <label>
+        Date Of Birth: <br>
+        <input type="date" id="date" required name="date"/> </label
+      ><br></br>
+      <label>
+        Email/Phone <br>
+        <input type="text" id="Email" required placeholder="Address" name="Email">
+      </label><br></br>
+      <label>
+        Gender <br>
+        <input type="radio" required name="Other" id="radio" value="Male" checked> male
+        <br> <input type="radio" name="Other" required id="radio" value="female">female
+        <br><input type="radio" name="Other" required>other
+      </label><br></br>
+
+      <label>
+          <input type="checkbox" required name="checkbox"> Terms and condition
+      </label> <br></br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+  </body>
+</html>
