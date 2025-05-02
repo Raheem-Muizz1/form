@@ -19,9 +19,7 @@ input {
   border-radius: 30px;
   padding: 6px;
 }
-input:hover {
-  border: 2px solid;
-}
+
 h1 {
   text-align: center;
 }
@@ -30,13 +28,8 @@ h1 {
   width: 44%;
 }
 #Email {
-  width: 100%;
+  width: 80%;
 }
-
-#date {
-  width: 100%;
-}
-
 button {
   cursor: pointer;
   border-radius: 20px;
