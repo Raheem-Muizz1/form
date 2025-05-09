@@ -1,28 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: auto;
+}
+
 body {
-  background-color: #837e7e;
+  background-color: rgb(243, 243, 243);
   padding: 4%;
 }
-
-img {
-  float: left;
-  border-radius: 40%;
-}
-
 form {
   text-align: left;
   padding: 5%;
-  background-color: whitesmoke;
+  background-color: light;
   border-radius: 30px;
-  display: block;
-  margin: auto;
 }
 input {
   border: none;
   border-radius: 30px;
   padding: 6px;
+  background-color: rgb(230, 229, 229);
 }
-
-h1 {
+h2 {
   text-align: center;
 }
 
@@ -32,6 +29,11 @@ h1 {
 #Email {
   width: 88%;
 }
+
+#date {
+  width: 88%;
+}
+
 button {
   cursor: pointer;
   border-radius: 20px;
@@ -39,13 +41,15 @@ button {
   display: block;
   margin: auto;
   padding: 10px;
-  background-color: #837e7e;
+  background-color: #204ea1;
   color: whitesmoke;
   font-size: large;
+  width: 90%;
+  height: auto;
 }
 
 button:hover {
-  background-color: aliceblue;
+  background-color: rgb(48, 13, 201);
   color: black;
 }
 
@@ -53,4 +57,32 @@ button:hover {
   text-align: center;
   margin-top: 10px;
   color: green;
+}
+#error-message {
+  color: red;
+}
+
+@media only screen and (min-width: 992px) {
+  form {
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+  }
+  input[type="text"],
+  input[type="search"],
+  input[type="date"] {
+    width: 100%;
+    background-color: lightgray;
+  }
+  button {
+    width: 97%;
+  }
+  .image {
+    border: 2px solid;
+    border-radius: 40px;
+    background-color: rgb(235, 234, 234);
+    width: 75%;
+    justify-items: center;
+    margin: auto;
+  }
 }
