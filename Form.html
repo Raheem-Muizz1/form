@@ -2,52 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Application Form</title>
     <link rel="stylesheet" href="Form.css" />
-    <script src="Form.js"></script>
+    <script src="Form.js">
+    </script>
   </head>
   <body>
     <div class="image">
-      <h1>
+      <h2>
          Calculus Pathfinder Consult <br />
-         Application Form
-      </h1>
-    </div>
+         <small>Application Form</small>
+      </h2>
+
     <form id="user" action="https://formspree.io/f/xeogaaqo" method="post">
       <label>
-       Applicant full name: <br>
-        <input type="text" id="name" required  placeholder="First name" name="name" onkeyup="lettersOnly(this)"/> 
-      <input type="text" id="name" class="last" required placeholder="Last name" name="name" onkeyup ="lettersOnly(this)"/> 
+       Applicant full name <br>
+        <input type="text" id="name" required  placeholder="First name" name="name" maxlength="15" onkeyup="lettersOnly(this)"/> 
+      <input type="text" id="name" class="last" required placeholder="Last name" name="name" maxlength="15" onkeyup="lettersOnly(this)"> 
       </label><br></br>
       <label>
-        Date Of Birth: <br>
-        <input type="date" id="date" required name="date" min="1970-01-01"/> </label
-      >
-      <div id ="error-message"></div>
-      <br></br>
+        Date Of Birth <br>
+        <input type="date" id="date" required name="date"/> </label
+      ><span id="erroe-message"></span><br></br>
       <label>
         Email/Phone <br>
-        <input type="text" id="Email" required placeholder="Address" name="Email">
+        <input type="search" id="Email" required placeholder="Address" name="Email">
       </label><br></br>
       <label>
-        Gender <br>
+        Gender <br>                                                                                                                                                                                                                                                                                                                                                                                            
         <input type="radio" required name="Other" id="radio" value="Male" checked> male
-        <br> <input type="radio" name="Other" required id="radio" value="female">female 
+        <br> <input type="radio" name="Other" required id="radio" value="female">female
         <br><input type="radio" name="Other" required>other
       </label><br></br>
 
-      <label
-          <input type="checkbox" required name="checkbox"> 
-         Terms and condition
-        <div>All participants are expected to maintain a high standard of
-          professionalism and mutual respect throughout the training period.
-          This includes: punctuality, focus, intergrity, and respectful ineraction.
+      <label>
+          <input type="checkbox" required name="checkbox"> Terms and conditions
+      
+         <div>All participants are expected to maintain a high standard
+          of professionalism and mutual respect throughout the training
+          period. This includes: punctuality, focus, intergrity, and respectful ineraction.
           Failure to comply with the above may lead to a warning, suspension,
-          or removal from the program.</div>
-      </label> <br></br>
+          or removal from the program.
+      </div>
+        </label> <br></br>
         <button type="submit">Submit</button>
+
     </form>
-    <div id="message"></div>
+    </div>
   </body>
 </html>
