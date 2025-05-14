@@ -2,52 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Application Form</title>
     <link rel="stylesheet" href="Form.css" />
-    <script src="Form.js">
-    </script>
+    <script src="Form.js"></script>
   </head>
   <body>
-    <div class="image">
+    <div>
       <h2>
-         Calculus Pathfinder Consult <br />
-         <small>Application Form</small>
+        Calculus Pathfinders Consults <br />
+        Application Form
       </h2>
 
-    <form id="user" action="https://formspree.io/f/xeogaaqo" method="post">
-      <label>
-       Applicant full name <br>
-        <input type="text" id="name" required  placeholder="First name" name="name" maxlength="15" onkeyup="lettersOnly(this)"/> 
-      <input type="text" id="name" class="last" required placeholder="Last name" name="name" maxlength="15" onkeyup="lettersOnly(this)"> 
-      </label><br></br>
-      <label>
-        Date Of Birth <br>
-        <input type="date" id="date" required name="date"/> </label
-      ><span id="erroe-message"></span><br></br>
-      <label>
-        Email/Phone <br>
-        <input type="search" id="Email" required placeholder="Address" name="Email">
-      </label><br></br>
-      <label>
-        Gender <br>                                                                                                                                                                                                                                                                                                                                                                                            
-        <input type="radio" required name="Other" id="radio" value="Male" checked> male
-        <br> <input type="radio" name="Other" required id="radio" value="female">female
-        <br><input type="radio" name="Other" required>other
-      </label><br></br>
-
-      <label>
-          <input type="checkbox" required name="checkbox"> Terms and conditions
-      
-         <div>All participants are expected to maintain a high standard
-          of professionalism and mutual respect throughout the training
-          period. This includes: punctuality, focus, intergrity, and respectful ineraction.
-          Failure to comply with the above may lead to a warning, suspension,
-          or removal from the program.
-      </div>
+      <form action="">
+        <label for="">
+          Applicant Name <br />
+          <input type="text" placeholder="Firstname" name="name"  minlength="3" onkeyup="lettersOnly(this)"/>
+          <input type="text" placeholder="Lastname" name="name" minlength="3" required onkeyup="lettersOnly(this)"/>
+        </label><br></br>
+        <label for="">
+          Date Of Birth <br>
+          <input type="date" name="Date" required>
+        </label><br></br>
+        <label for="">
+          Email <br />
+          <input type="phone / email" placeholder="Email/Phone" size="46%" required/>
         </label> <br></br>
-        <button type="submit">Submit</button>
-
-    </form>
+        <label for="">
+           Gender <br>
+           <input type="radio" name="gender" value="male"> male <br>
+           <input type="radio" name="gender" value="female"> female <br>
+           <input type="radio" name="gender" value="other"> other<br>
+        </label><br>
+        <label for="">
+          <input type="checkbox" required> Terms and Conditions <br>
+            <div class="label">All participants are expected tp maintain a high standard of
+               professionalism and mutual respect throughout the training period.
+               This includes: Punctuality, Respectful Intraction, and integrity.
+                Failure to comply with the above may lead to suspension,
+                 or removal from the program</div>
+        </label><br></br>
+        <button type="submit" name="submit" width ="50%">Submit</button>
+      </form>
     </div>
   </body>
 </html>
