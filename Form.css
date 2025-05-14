@@ -1,93 +1,23 @@
 * {
   box-sizing: border-box;
-  padding: auto;
 }
-
 body {
-  background-color: white;
-  padding: 4%;
-  scroll-behavior: smooth;
-  width: 100%;
-  height: auto;
-  font-size: 40px;
-}
-.image {
-  background-color: white;
-  padding: 10px;
-  width: 100%;
-  height: auto;
+  padding: 7px;
+  background-color: whitesmoke;
 }
 form {
-  text-align: left;
-  padding: 5%;
-  background-color: white;
-  border-radius: 30px;
+  padding: 7px;
 }
 input {
   border: none;
-  border-radius: 30px;
-  padding: 15px;
-  background-color: lightgray;
+  padding: 7px;
+  border-radius: 5px;
 }
-h2 {
-  text-align: center;
-}
-
-#name {
-  width: 44%;
-}
-#Email {
-  width: 88%;
-}
-
-#date {
-  width: 88%;
-}
-
 button {
-  cursor: pointer;
-  border-radius: 20px;
+  width: 100%;
   border: none;
-  display: block;
-  margin: auto;
-  padding: 10px;
-  background-color: #204ea1;
-  color: whitesmoke;
-  font-size: large;
-  width: 90%;
-  height: auto;
-}
-
-button:hover {
-  background-color: rgb(48, 13, 201);
-  color: black;
-}
-
-#message {
-  text-align: center;
-  margin-top: 10px;
-  color: green;
-}
-#error-message {
-  color: red;
-}
-
-@media only screen and (min-width: 992px) {
-  input[type="text"],
-  input[type="search"],
-  input[type="date"] {
-    width: 100%;
-    background-color: rgb(230, 229, 229);
-  }
-  button {
-    width: 97%;
-  }
-  .image {
-    border: 2px solid rgb(138, 138, 192);
-    border-radius: 40px;
-    background-color: #d4d5d6;
-    width: 45%;
-    justify-items: center;
-    margin: auto;
-  }
+  border-radius: 10px;
+  background-color: rgba(40, 40, 233, 0.603);
+  padding: 7px;
+  color: aliceblue;
 }
