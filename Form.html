@@ -17,7 +17,7 @@
       <form action="https://formspree.io/f/xeogaaqo" method="POST" id= "Signup-Form">
         <label for="name">
           Applicant Name <br />
-          <input type="search" placeholder="Firstname" name="name"  minlength="3" onkeyup="lettersOnly(this)"/>
+          <input type="search" placeholder="Firstname" name="name"  minlength="3" required onkeyup="lettersOnly(this)"/>
           <input type="search" placeholder="Lastname" name="name" minlength="3" required onkeyup="lettersOnly(this)"/>
         </label><br></br>
         <label for="date">
@@ -27,7 +27,7 @@
         <label for="phone">
           Phone<br>
           <input type='number' name="number" required size = "46%" placeholder="Phone">
-        </label><br>
+        </label><br></br>
         <label for="email">
           Email <br />
           <input type="search" placeholder="Email" size="46%" required name="email"/>
